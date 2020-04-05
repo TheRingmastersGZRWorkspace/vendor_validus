@@ -144,7 +144,8 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     Launcher3Dark \
     ExactCalculator \
-    OmniStyle
+    OmniStyle \
+    NexusLauncherRelease
 
 
 # Extra tools
