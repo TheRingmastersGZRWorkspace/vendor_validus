@@ -85,6 +85,29 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/validus/config/permissions/validus-power-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/validus-power-whitelist.xml
 
+# Validus System Permission
+PRODUCT_COPY_FILES += \
+    vendor/validus/config/permissions/privapp-permissions-validus-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-validus-system.xml
+
+# Validus Product Permission
+PRODUCT_COPY_FILES += \
+    vendor/validus/config/permissions/privapp-permissions-validus-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-validus.xml \
+    vendor/validus/config/permissions/privapp-permissions-google_prebuilt.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-google_prebuilt.xml
+
+# Hidden api whitelisted apps
+PRODUCT_COPY_FILES += \
+    vendor/validus/prebuilt/common/etc/sysconfig/validus-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/validus-hiddenapi-package-whitelist.xml
+
+# Lawnchair
+PRODUCT_COPY_FILES += \
+    vendor/validus/prebuilt/common/etc/permissions/privapp-permissions-lawnchair.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-lawnchair.xml \
+    vendor/validus/prebuilt/common/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml
+
+# Testing
+PRODUCT_COPY_FILES += \
+    vendor/validus/prebuilt/common/etc/permissions/privapp-permissions-google.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-google.xml \
+    vendor/validus/prebuilt/common/etc/permissions/privapp-permissions-gzr.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-gzr.xml 
+
 # Required packages
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver \
