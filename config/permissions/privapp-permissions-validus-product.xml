@@ -15,6 +15,10 @@
 -->
 <permissions>
 
+    <privapp-permissions package="com.android.gallery3d">
+        <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
+    </privapp-permissions>
+
     <privapp-permissions package="com.android.camera2">
         <permission name="android.permission.BIND_WALLPAPER"/>
         <permission name="android.permission.PREVENT_POWER_KEY"/>
@@ -47,10 +51,16 @@
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>
 
+    <privapp-permissions package="com.android.settings">
+        <permission name="android.permission.RESET_BATTERY_STATS"/>
+    </privapp-permissions>
+
     <privapp-permissions package="com.android.systemui">
         <permission name="android.permission.WRITE_APN_SETTINGS"/>
         <permission name="android.permission.FORCE_STOP_PACKAGES" />
         <permission name="android.permission.CHANGE_CONFIGURATION" />
+        <permission name="android.permission.RECOVERY" />
+        <permission name="android.permission.REBOOT" />
     </privapp-permissions>
 
     <privapp-permissions package="com.google.android.settings.intelligence">
