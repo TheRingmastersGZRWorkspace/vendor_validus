@@ -235,7 +235,7 @@ ifdef VALIDUS_BUILD_EXTRA
 endif
 
 ifndef VALIDUS_BUILD_TYPE
-    VALIDUS_BUILD_TYPE := UNOFFICIAL
+    VALIDUS_BUILD_TYPE := OFFICIAL
 endif
 
 # Set all versions
